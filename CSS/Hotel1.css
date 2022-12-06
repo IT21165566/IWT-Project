@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 0px;
+    background: #f1f1f1;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 70%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 30%;
+    background-color: #f1f1f1;
+    padding-left: 10px;
+  }
+  
+  /* Fake image */
+  .fakeimg  {
+    width: 100%;
+   
+    padding: 2px;
+  }
+  
+  /*location*/
+  .location iframe {
+      width: 100%;
+      padding: 0px;
+      width: 350px;
+      height: 225px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /*hotel navs */
+  /* .card ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      top: 0;
+      width: 100%;
+      background-color:crimson;
+      border-radius: 15px;
+    } */
+    
+  .card li {
+      float: left;
+    }
+    
+  .card li a {
+      display: block;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      border-radius: 15px;
+    }
+    
+  .card li a:hover:not(.active) {
+      background-color: rgb(65, 57, 57);
+    }
+    
+  .card .active {
+      background-color:rgb(99, 89, 91);
+    }
+  
+  /*contact details*/
+  .contact ul {
+      list-style-type:circle;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      top: 0;
+      width: 100%;
+      background-color:rgb(255, 255, 255);
+      border-radius: 0px;
+    }
+    
+  .card .contact li {
+      float: left;
+  }
+  
+  /* Large rounded green border */
+  .rule hr{
+      border: 2px solid crimson;
+      border-radius: 0px;
+  }
+  
+  /*details*/
+  /* .normal ul {
+    font-size: 20px;
+     
+    } */
+  
+  /* The grid: Five equal columns that floats next to each other */
+  .column {
+      float: left;
+      width: 20%;
+      padding: 5px;
+    }
+    
+    /* Style the images inside the grid */
+    .column img {
+      opacity: 0.8; 
+      cursor: pointer; 
+    }
+    
+    .column img:hover {
+      opacity: 1;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* The expanding image container */
+    .container {
+      position: relative;
+      display: none;
+    }
+    
+    /* Expanding image text */
+    #imgtext {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      color: white;
+      font-size: 20px;
+    }
+    
+    /* Closable button inside the expanded image */
+    .closebtn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      color: white;
+      font-size: 35px;
+      cursor: pointer;
+    }
+
+    /*review*/
+    .heading {
+      font-size: 25px;
+      margin-right: 25px;
+    }
+    
+    .fa {
+      font-size: 25px;
+    }
+    
+    .checked {
+      color: orange;
+    }
+    
+    /* Three column layout */
+    .side {
+      float: left;
+      width: 15%;
+      margin-top:10px;
+    }
+    
+    .middle {
+      margin-top:10px;
+      float: left;
+      width: 70%;
+    }
+    
+    /* Place text to the right */
+    .right {
+      text-align: right;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* The bar container */
+    .bar-container {
+      width: 100%;
+      background-color: #f1f1f1;
+      text-align: center;
+      color: white;
+    }
+    
+    /* Individual bars */
+    .bar-5 {width: 90%; height: 18px; background-color: #04AA6D;}
+    .bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+    .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+    .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+    .bar-1 {width: 2%; height: 18px; background-color: #f44336;}
+    
+    /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+    @media (max-width: 400px) {
+      .side, .middle {
+        width: 100%;
+      }
+      .right {
+        display: none;
+      }
+    }

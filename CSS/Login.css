@@ -1,0 +1,249 @@
+
+*
+{  
+    margin  :0;
+    padding :0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+section > .ImgBx
+{
+    position: relative;
+    width:50%;
+    height: 80%;
+    top: -90px;
+    
+}
+section > .ImgBx:before
+{   content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 200%;
+    object-fit: cover;
+    background: linear-gradient(225deg,#e91e63,#03a9f4);
+    z-index:1;
+    mix-blend-mode: screen;
+}
+
+section > .ImgBx img
+{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    object-fit: cover;
+}
+
+section > .contentBx
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    position: relative;
+
+    
+}
+
+section > .contentBx  >.formBx
+{
+    width: 50%;
+    width: 100%;
+    padding: 40px;
+    background: rgb(255 255 255 / 0.9);
+    margin: 50px;
+}
+
+section > .contentBx > .formBx > h2
+{
+    color: #607d8b;
+    font-weight: 600;
+    font-size: 5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #ff4584;
+    display: inline-block;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.inputBx
+{
+    margin-bottom: 20px;
+    /* font-size: 30px;
+    justify-content: center; */
+}
+.inputBx > span
+{
+    font-size: 30px;
+    margin-bottom: 5px;
+    display: flex;
+    color: #607d8b;
+    font-weight: 300;
+
+    letter-spacing: 1px;
+}
+
+input
+{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 30px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.inputBx > input[type="submit"]
+{
+    background: #ff4584;
+    color: #fff;
+    outline: none;
+    font-weight: 900;
+    cursor: pointer;
+    height: 50px;
+    width: 600px;
+    font-size: 20px;
+    
+    
+}
+.Btn1,
+.Btn2{  
+    background: #ff4584;
+    color: #fff;
+    outline: none;
+    font-weight: 900;
+    cursor: pointer;
+    height: 50px;
+    width: 600px;
+    font-size: 22px;
+       width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    /* font-size: 16px; */
+    letter-spacing: 1px;
+    color: #607d8b;
+    /* background: transparent; */
+    border-radius: 30px;
+    margin-bottom: 2px;
+    display: inline-block;
+    margin-top: 2px;
+
+    }
+
+.inputBx > input[type="submit"]:hover
+{
+    background: #000000;
+    
+}
+.remember>input[type="checkbox"]{
+    left: 200px;
+    padding: 0px 90px;
+}
+
+.remember
+{
+    margin-bottom: 2px;
+    padding: 10px;
+    color: #607d8b;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+.remember >label >input [type="checkbox"]{
+    padding: 0px  0px 600px;
+}
+
+.inputBx > p
+{
+    font-size: 20px;
+    color: #607d8b;
+}
+
+/* .inputBx >  p > a
+{
+    color: #ff4584;
+} */
+
+.formBx > h3
+{
+    color: #607d8b;
+    text-align: center;
+    margin: 80px 0 10px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #607d8b;
+    text-align: center;
+    margin: 30px 0 10px;
+    font-weight: 500;
+}
+
+.sci
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sci 
+{
+    list-style: none;
+    width: 5px;
+    height: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #607d8b;
+    border-radius: 20%;
+    margin: 0 270px;
+    cursor: pointer;
+}
+header > .nav-section > ul > li> a:hover{
+    color: black;
+    cursor: pointer;
+}
+
+/* li:hover
+{
+    background: #eb2a6a;
+} */
+
+.sci > li >img
+{
+    transform: scale(0.5);
+    /* filter: invert(1); */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+   
+
+}
+
+
+
+#remeber{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 600px 900px;
+}

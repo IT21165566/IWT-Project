@@ -1,0 +1,124 @@
+#Typesbody{
+	display:flex;
+	justify-content:space-between;
+	width:100%;
+  Color:red;
+}
+.W1{
+	width:20%;
+	padding:10px 10px;
+}
+.Ttxtstyle{
+  font-size: 60px;
+  text-decoration: underline;
+  
+}
+.W2{
+	width:40%;
+	padding:10px 10px;
+	
+} 
+/* .pa{
+  font-size: 10px;
+}; */
+
+#Tccard{
+  width: 100%;
+  display: flex;  
+ justify-content: center;
+  overflow: hidden; 
+  
+}
+
+.Tcard{
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-rows: 120px 300px 1px;
+  grid-template-areas: "image" "text" "stats";
+  font-family: roboto;
+  border-radius: 18px;
+  background: rgb(253, 250, 250);
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.9);
+  text-align: center;
+  margin:30px 30px;
+  justify-content:space-between;
+  
+}
+
+.Tcard-image,
+.Tcard-image1,
+.Tcard-image2,
+.Tcard-image3,
+.Tcard-image4,
+.Tcard-image5,
+.Tcard-image6,
+.Tcard-image7{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-size: 250px;
+  height: 170px;
+
+}
+
+.Tcard-image{
+  background-image: url(../images/T1.jpg);
+  
+}
+
+.Tcard-image1{
+  background-image: url(../images/T2.jpg);
+
+}
+
+.Tcard-image2{
+  background-image: url(../images/T3.jpg);
+
+}
+
+.Tcard-image3{
+  background-image: url(../images/T4.jpg);
+
+  
+}
+
+.Tcard-image4{
+  background-image: url(../images/T5.jpg);
+
+  
+}
+
+.Tcard-image5{
+  background-image:url(../images/T6.webp);
+
+  
+}
+
+.Tcard-image6{
+  background-image: url(../images/T7.jpg);
+
+  
+}
+
+.Tcard-image7{
+  background-image: url(../images/T8.jpg);
+
+  
+}
+
+
+.Tcard-text{
+  grid-area: text;
+  margin:25px;
+  text-align:left;
+  padding-top:50px;
+
+}
+
+.Tcard-stats{
+  grid-area: stats;
+}
+body{
+  background-image:url(../images/B1.jpg);
+  background-size: 250%;
+  background-repeat: no-repeat;
+}

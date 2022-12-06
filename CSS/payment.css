@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=M+PLUS+Rounded+1c&family=Pacifico&family=Poppins:wght@400;600&display=swap');
+/* styles for whole page */
+.bimage{
+    background-image: url(../image/W3.jpg);
+    background-repeat: no-repeat, repeat;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 270vh;
+}
+
+/* Header section styles */
+header{
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+}
+
+header > .front-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100px;
+}
+
+header > .front-row >.login-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Koulen', cursive;
+    font-size: 1.5em;
+    font-size: 1.5em;
+    height: 150px;
+    width: 400px;
+    position: absolute;
+    right: 0;
+}
+
+/* header > .front-row >.login-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Koulen', cursive;
+    font-size: 1.5em;
+    font-size: 1.5em;
+    height: 150px;
+    width: 400px;
+    position: absolute;
+    right: 0;
+} */
+
+header > .nav-section{
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: crimson;
+    margin-top: 15px;
+}
+/* nav list styles goes here */
+
+
+header > .nav-section > ul > li{
+    float: left;
+    list-style: none;
+    padding: 20px;
+    font-family: 'Koulen', cursive;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color:white;
+}
+
+
+header > .nav-section > ul > li> a:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.bookNow{
+    float: right;
+    list-style: none;
+    padding: 5px 0px 0px 80px;
+    margin-left: 280px;
+    left: 80%;
+    display: flex;
+    /* align-items: right; */
+
+}
+.nav-new{
+    float: right;
+}
+header > .front-row >.login-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Koulen', cursive;
+    font-size: 1.5em;
+    font-size: 1.5em;
+    height: 150px;
+    width: 400px;
+    position: absolute;
+    right: 0;
+}
+
+
+.btn-packs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    cursor: pointer;
+}
+
+.btn-packs > .log > span{
+    text-align: center;
+    padding:8px 0 0 0;
+}
+
+.btn-packs > .log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 140px;
+    height: 40px;
+    border: 2px solid crimson;
+    letter-spacing: 5px;
+    border-radius: 10px;
+    margin: 0 10px;
+    font-size: 20px;
+    color: crimson;
+    text-transform: uppercase;
+    transition: .5s;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+
+.btn-packs > .log>:hover{
+    background-color: crimson;
+    color: white;
+    border-radius: 10px;
+    width: 140px;
+    height: 60px;
+}
+.btn-packs > .avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin-left: 20px;
+    height: 50px;
+    width: 50px;
+    border: 2px solid crimson;
+    border-radius: 50%;
+    background-color:white;
+    /* border: 2px solid black; */
+}
+
+
+/* .btn-packs > .avatar > p{
+    position: absolute;
+    display: flex;
+    top: 70px;
+    font-size: 16px;
+    padding: 5px;
+    background-color: #2c3e50;
+    color: wheat;
+    border-radius: 5px;
+    visibility: hidden;
+    transition: .5s;
+    
+} */
+
+.btn-packs > .avatar:hover > p{
+    visibility: visible;
+    background-color: #d75c60;
+}
+/* header end*/
+
+
+
+ /* footer editing part */
+ .sticky-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 100%;
+    width: 100%;
+    height: 180px;
+    background: linear-gradient(to bottom, #DC143C 0%, #ffffff 100%);
+    z-index: 10;
+}
+.txt-area{
+    position: relative;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 50px;
+    width: 400px;
+}
+
+.txt-area .text-1{
+    color: rgb(7, 6, 6);
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0 40px;
+    transition: .3s;
+}
+
+.txt-area .text-1:hover{
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.txt-area  #divider{
+    color: white;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.social-icons{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    height: 50px;
+    width: 400px;
+}
+
+.social-icons  > div > i{
+    position: relative;
+    color: white;
+    font-size: 40px;
+    margin: 0 20px;
+    transition: .5s ease-in;
+}
+
+.social-icons  > .fb > i:hover{
+    transform: scale(1.2);
+    color: #0652DD;
+}
+
+.social-icons  > .twitter > i:hover{
+    transform: scale(1.2);
+    color: #0097e6;
+}
+
+.social-icons  > .insta > i:hover{
+    transform: scale(1.2);
+    color: #EE5A24;
+}
+
+.social-icons  > div > i:hover{
+    transform: scale(1.2);
+    color: #EA2027;
+}
+
+  
+  .logingbody{
+      padding:10px 20px 20px 20px;
+      margin-top: 100px;
+  
+  }
+  /*============================================================================*/
+
+
+  /*--------------------------------------------------------------------------------------*/
+
+/*============================================================================*/
+
+h1.style{
+	color:white;
+	font-family:"Arial Black", Gadget, sans-serif;
+	text-shadow:1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+	font-size:60px;
+    margin-left: 100px;
+}
+
+section {
+	padding:20px 20px;
+}
+
+/*DIV sections*/
+.pmethod {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+
+}
+
+.col-50,
+.coll-50 {
+   flex: 50%;
+}
+
+.col-50 {
+  padding: 20px 16px;
+}
+/*--------------------------------------------------------------------------------------*/
+/*Form*/
+
+fieldset{
+	padding:10px 100px 60px;
+    margin: 80px;
+    margin-top: 30px;
+    background: linear-gradient(135deg,#DC143C,#fff);
+}
+
+legend{
+	font-size:50px;
+	font-weight:bold;
+    margin-left: 10px;
+    text-align: center;
+  
+}
+
+
+#formStyle label {
+  display: block;
+  font-size:27px;
+  float:left;
+  margin-left:10px;
+}
+
+
+#formStyle  input[type= password],
+#formStyle  input[type= number],
+#formStyle input[type=file],
+#formStyle input[type=number],
+#formStyle input[type=email],
+#formStyle input[type=month],
+#formStyle input[type=date],
+#formStyle input[type=text],
+#formStyle input[type=tel],
+#formStyle select{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+}
+
+#formStyle input:active[type=file],
+#formStyle input:active[type=number],
+#formStyle input:active[type=month],
+#formStyle input:active[type=text],
+#formStyle select:active{
+    border: 2px solid #808080;
+	outline:none;
+}
+
+
+#formStyle textarea{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  height:80px;
+  font-family:Verdana;
+  border-radius:50px;
+  outline:none;
+  resize: vertical;
+  
+}
+
+/*#formStyle form{
+	padding: 1px;
+	background-color: rgba(255, 255, 255,0.4);
+	font-size:14px;
+	font-family:Verdana;
+	color:black;
+	margin:20px;
+	box-shadow:1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+	outline: none;
+	border:none;
+    background-image:url(../image/payment.png)*/
+	
+
+
+#formStyle form{
+	width:99%;
+}
+
+
+
+
+.Btn,
+.Btn1,
+.Btn2,
+.Btn3,
+.Btn4,
+.Btn5{
+	padding:20px 30px;
+	font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #00cc00;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 9px #999;
+  margin-bottom:30px;
+  margin-top:10px;
+  margin-left:20px;
+	
+}
+.set{
+    margin-top: 100px;
+    margin-left: 350px;
+}
+body{
+    background-image: url(../image/payment4.png);
+    background-repeat: no-repeat, repeat;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Koulen', cursive;
+}
+
+a  :hover{
+    color: black;
+}
+.Btn1
+{
+	padding:20px 30px;
+	font-size: 22px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color:#ccc(14, 13, 13);
+  background-color: #e44242;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 9px rgb(229, 223, 223);
+  margin-bottom:50px;
+  margin-top:50px;
+  margin-left:20px;
+width: 30px;
+}
